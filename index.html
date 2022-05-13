@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -15,37 +15,45 @@
 <body>
 
   <!-- Barre de Navigation -->
-    <nav class="navbar navbar-expand-md navbar-light sticky-top container-fluic">
-        <h1>Travel Agency<span class="orange">.</span></h1>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse justify-content-center" id="myNavbar">
-            <ul class="nav nav-pills navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#">Acceuil</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Voyages</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Circuits</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+  
+  <div class="container">
+    <nav class="navbar navbar-expand-md navbar-light sticky-top container-fluid">
+      <h1>Travel Agency<span class="orange">.</span></h1>
+  
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+              <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse justify-content-center" id="myNavbar">
+        <ul class="nav nav-pills navbar-nav">
+          <li class="nav-item"><a class="nav-link text-body" href="#main-image">ACCUEIL</a></li>
+          <li class="nav-item"><a class="nav-link text-body" href="#steps">DESTINATIONS</a></li>
+          <li class="nav-item"><a class="nav-link text-body" href="#possibilities">CIRCUITS</a></li>
+          <li class="nav-item"><a class="nav-link text-body" href="#contact">CONTACT </a></li>
+        </ul>
+      </div>
+  </nav>
+  </div>
 
     <!-- Fin Barre de Navigation -->
+
+    <!-- Header -->
     <section class="container-fluid" id="main-image">
       <h2>Organisez votre<br><strong>voyage sur mesure</strong></h2>
       <a href="#" class="button-1">Par ici</a>
     </section>
 
+    <!-- Fin Header-->
+
+    <!-- STEPS -->
     <div class="container">
       <div class="row">
         <div class="card" style="width: 18rem;">
           <img src="img/steps-icon-1.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Planifier</h5>
-            <p>Confiez-nous vos rêves d'évasion : en famille ou entre amis,
-              nous trouverons la formule qui comblera vos attentes</p>
+            <h5 class="card-title">Partez en famille</h5>
+            <p class="card-text">Offrez le meilleur à ceux que vous aimez et partagez
+              des moments fabuleux !</p>
             <a href="#" class="btn btn-primary">Voir plus</a>
           </div>
         </div>
@@ -53,24 +61,97 @@
         <div class="card" style="width: 18rem;">
           <img src="img/steps-icon-2.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Organiser</h5>
-            <p>Confiez-nous vos rêves d'évasion : en famille ou entre amis,
-              nous trouverons la formule qui comblera vos attentes</p>
+            <h5 class="card-title">Partez en famille</h5>
+            <p class="card-text">Offrez le meilleur à ceux que vous aimez et partagez
+              des moments fabuleux !</p>
             <a href="#" class="btn btn-primary">Voir plus</a>
           </div>
         </div>
 
         <div class="card" style="width: 18rem;">
-          <img src="img/steps-icon-3.png" class="card-img-top" alt="...">
+          <img src="img/steps-icon-2.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Voyager</h5>
-            <p>Confiez-nous vos rêves d'évasion : en famille ou entre amis,
-              nous trouverons la formule qui comblera vos attentes</p>
+            <h5 class="card-title">Partez en famille</h5>
+            <p class="card-text">Offrez le meilleur à ceux que vous aimez et partagez
+              des moments fabuleux !</p>
             <a href="#" class="btn btn-primary">Voir plus</a>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Fin STEPS -->
+
+    <!-- Possibilities -->
+    <section id="possibilities">
+      <div class="container jus-center switch">
+          <article style="background-image: url(img/article-image-1.jpg);">
+              <div class="overlay">
+                  <h4>Partez en famille</h4>
+                  <p><small>Offrez le meilleur à ceux que vous aimez et partagez
+                          des moments fabuleux !
+                      </small></p>
+                  <a href="#" id="button-2">Plus d'info</a>
+              </div>
+          </article>
+
+          <article style="background-image: url(img/article-image-2.jpg);">
+              <div class="overlay">
+                  <h4>Envie de s'évader</h4>
+                  <p><small>Parfois un peu d'évasion serait le bienvenue et ferait le plus grand
+                          bien !
+                      </small></p>
+                  <a href="#" id="button-2">Plus d'info</a>
+              </div>
+          </article>
+          <div class="clear"></div>
+      </div>
+  </section>
+
+    <!-- Fin Possibilities -->
+
+    <!-- Formulaire de contact -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <label for="">Prénom</label>
+          <input type="text" class="form-control" aria-label="Prenom">
+        </div>
+        <div class="col">
+          <label>Nom</label>
+          <input type="text" class="form-control" aria-label="Nom">
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Sujet</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+    </div>
+
+    <!-- Fin Formulaire de contact -->
+
+    <!-- Footer -->
+
+    <div class="container-fluid" id="footer-bg">
+      <footer class="py-3 my-4">
+        <h1 class="text-center text-light">Travel Agency<span class="orange">.</span></h1>
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">ACCUEIL</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">DESTINATIONS</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">CIRCUITS</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">CONTACT</a></li>
+        </ul>
+        <p class="text-center text-light">&copy; 2022 Brandon GUYON</p>
+      </footer>
+    </div>
+
+    <!-- Fin Footer -->
 
 </body>
 
