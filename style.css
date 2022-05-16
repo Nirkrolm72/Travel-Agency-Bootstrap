@@ -27,7 +27,6 @@ a{
 
 
 
-
 #main-image{
     background: url('img/main.jpg') center no-repeat;
     background-size: cover;
@@ -68,13 +67,23 @@ a{
     border: none;
   }
 
+  .title-dest{
+    margin-top: 20px;
+  }
+
   #possibilities {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #efefef;
     padding: 60px 0;
 }
+
+.title-circuit{
+  margin-bottom: 50px;
+}
+
 
 #possibilities article {
     width: 460px;
@@ -126,22 +135,13 @@ article h4 {
 
 #footer-bg{
   background-color: #3F3E3E;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
   .nav>li{
     text-align: center;
   }
-  .card-body{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .card-text{
-    
-  }
-
 
   #possibilities {
     display: flex;
