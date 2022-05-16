@@ -7,16 +7,32 @@
 }
 
 /* Fin Global */
+
+a{
+  text-decoration: none;
+}
 .orange{
   color: #ff7a00;
 }
+
+.jus-center {
+  display: flex;
+  justify-content: center;
+}
+
+.align-itm-center {
+  display: flex;
+  align-items: center;
+}
+
+
+
 
 #main-image{
     background: url('img/main.jpg') center no-repeat;
     background-size: cover;
     text-align: center;
     margin: 0 auto;
-    float: none;
   }
 
   #main-image h2{
@@ -46,9 +62,17 @@
     color: #fff;
   }
 
+  .card{
+    margin: 0 auto;
+    margin-top: 30px;
+    border: none;
+  }
+
   #possibilities {
     display: flex;
-    background-color: var(--bg-color-possibilities);
+    align-items: center;
+    justify-content: center;
+    background-color: #efefef;
     padding: 60px 0;
 }
 
@@ -93,9 +117,48 @@ article h4 {
 }
 
 #button-2:hover {
-    background-color: var(--bg-button1-hover);
+    background-color: #02b8dd;
+}
+
+#contact-title{
+  margin-top: 20px;
 }
 
 #footer-bg{
   background-color: #3F3E3E;
+}
+
+@media screen and (max-width: 768px) {
+  .nav>li{
+    text-align: center;
+  }
+  .card-body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-text{
+    
+  }
+
+
+  #possibilities {
+    display: flex;
+    flex-direction: column;
+}
+
+  #possibilities article {
+    width: 350px;
+    height: 270px;
+  }
+
+  .switch{
+    display: flex;
+    flex-direction: column;
+  }
+
+  article {
+    margin-bottom: 30px;
+  }
 }
