@@ -36,6 +36,14 @@ a{
   max-width: 100%;
 }
 
+.collapse ul.navbar-nav>li>a:hover {
+  color: #ff7a00 !important;
+}
+
+.carousel .carousel-item{
+  height: 400px;
+}
+
 .main-image{
     /* background: url('img/main.jpg') center no-repeat; */
     background-position: center;
