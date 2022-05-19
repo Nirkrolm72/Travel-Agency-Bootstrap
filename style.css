@@ -1,9 +1,13 @@
 /* Global */
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 *, ::before, ::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
 }
 
 html{
@@ -31,7 +35,6 @@ a{
 .max-width{
   max-width: 100%;
 }
-
 
 .main-image{
     /* background: url('img/main.jpg') center no-repeat; */
