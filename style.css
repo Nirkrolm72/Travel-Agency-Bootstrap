@@ -46,7 +46,10 @@ a {
 }
 
 .carousel img {
-  height: 400px;
+<<<<<<< HEA
+=======
+  height: 600px;
+>>>>>>> 3ea0868c470674c72998e4cc326e237eaa18e340
 }
 
 .carousel-caption {
@@ -54,7 +57,10 @@ a {
   transform: translateY(-50%);
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3ea0868c470674c72998e4cc326e237eaa18e340
 .button-1 {
   display: block;
   width: 120px;
